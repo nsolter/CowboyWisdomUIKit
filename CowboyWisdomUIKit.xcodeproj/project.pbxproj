@@ -10,9 +10,11 @@
 		8F1965352B22C59C00A19D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1965342B22C59C00A19D16 /* AppDelegate.swift */; };
 		8F1965372B22C59C00A19D16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1965362B22C59C00A19D16 /* SceneDelegate.swift */; };
 		8F1965392B22C59C00A19D16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1965382B22C59C00A19D16 /* ViewController.swift */; };
-		8F19653C2B22C59C00A19D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F19653A2B22C59C00A19D16 /* Main.storyboard */; };
 		8F19653E2B22C59D00A19D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F19653D2B22C59D00A19D16 /* Assets.xcassets */; };
 		8F1965412B22C59D00A19D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F19653F2B22C59D00A19D16 /* LaunchScreen.storyboard */; };
+		8F1965492B23702400A19D16 /* wisdom.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F1965482B23702400A19D16 /* wisdom.json */; };
+		8F19654B2B23703F00A19D16 /* wisdomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19654A2B23703F00A19D16 /* wisdomModel.swift */; };
+		8F1965512B237BC000A19D16 /* CowboyWisdomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1965502B237BC000A19D16 /* CowboyWisdomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		8F1965342B22C59C00A19D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F1965362B22C59C00A19D16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8F1965382B22C59C00A19D16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8F19653B2B22C59C00A19D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F19653D2B22C59D00A19D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F1965402B22C59D00A19D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F1965422B22C59D00A19D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1965482B23702400A19D16 /* wisdom.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wisdom.json; sourceTree = "<group>"; };
+		8F19654A2B23703F00A19D16 /* wisdomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wisdomModel.swift; sourceTree = "<group>"; };
+		8F1965502B237BC000A19D16 /* CowboyWisdomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowboyWisdomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,47 @@
 			children = (
 				8F1965342B22C59C00A19D16 /* AppDelegate.swift */,
 				8F1965362B22C59C00A19D16 /* SceneDelegate.swift */,
-				8F1965382B22C59C00A19D16 /* ViewController.swift */,
-				8F19653A2B22C59C00A19D16 /* Main.storyboard */,
+				8F1965552B23965100A19D16 /* Controllers */,
+				8F1965532B23964400A19D16 /* Views */,
+				8F1965522B23963A00A19D16 /* Models */,
+				8F1965542B23964900A19D16 /* Resources */,
 				8F19653D2B22C59D00A19D16 /* Assets.xcassets */,
 				8F19653F2B22C59D00A19D16 /* LaunchScreen.storyboard */,
 				8F1965422B22C59D00A19D16 /* Info.plist */,
 			);
 			path = CowboyWisdomUIKit;
+			sourceTree = "<group>";
+		};
+		8F1965522B23963A00A19D16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F19654A2B23703F00A19D16 /* wisdomModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F1965532B23964400A19D16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F1965502B237BC000A19D16 /* CowboyWisdomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F1965542B23964900A19D16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F1965482B23702400A19D16 /* wisdom.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F1965552B23965100A19D16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F1965382B22C59C00A19D16 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F1965412B22C59D00A19D16 /* LaunchScreen.storyboard in Resources */,
+				8F1965492B23702400A19D16 /* wisdom.json in Resources */,
 				8F19653E2B22C59D00A19D16 /* Assets.xcassets in Resources */,
-				8F19653C2B22C59C00A19D16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1965512B237BC000A19D16 /* CowboyWisdomView.swift in Sources */,
+				8F19654B2B23703F00A19D16 /* wisdomModel.swift in Sources */,
 				8F1965392B22C59C00A19D16 /* ViewController.swift in Sources */,
 				8F1965352B22C59C00A19D16 /* AppDelegate.swift in Sources */,
 				8F1965372B22C59C00A19D16 /* SceneDelegate.swift in Sources */,
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8F19653A2B22C59C00A19D16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F19653B2B22C59C00A19D16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8F19653F2B22C59D00A19D16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +329,7 @@
 				INFOPLIST_FILE = CowboyWisdomUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +357,7 @@
 				INFOPLIST_FILE = CowboyWisdomUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
